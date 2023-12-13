@@ -1,0 +1,47 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home-frame1 {
+  width: 100%;
+  height: 1595px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.home-rectangle1 {
+  top: 0px;
+  left: 0px;
+  width: 978px;
+  height: 440px;
+  position: absolute;
+}
+.home-photo-cv-retouched1 {
+  top: 64px;
+  left: 365px;
+  width: 248px;
+  height: 312px;
+  position: absolute;
+  border-radius: 146.5px;
+}
+.home-vector1 {
+  top: 152px;
+  left: -193px;
+  width: 1576px;
+  height: 300px;
+  position: absolute;
+}
+@media(max-width: 991px) {
+  .home-container {
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+  }
+}
