@@ -17,18 +17,18 @@
   background-color: rgba(26, 26, 26, 1);
 }
 .home-ripped1 {
-  width: 1920px;
-  height: 1371px;
+  width: 1200px;
+  height: 853px;
 }
 .home-text {
-  top: 167px;
-  left: 151px;
+  top: 94px;
+  left: 64px;
   color: rgba(255, 255, 255, 1);
-  width: 1094px;
+  width: 684px;
   height: auto;
   z-index: 1;
   position: absolute;
-  font-size: 100px;
+  font-size: 70px;
   font-style: Regular;
   text-align: left;
   font-family: Love Ya Like A Sister;
@@ -38,14 +38,14 @@
   text-decoration: none;
 }
 .home-text02 {
-  top: 429px;
-  left: 151px;
+  top: 277px;
+  left: 64px;
   color: rgba(128, 158, 215, 1);
-  width: 903px;
+  width: 565px;
   height: auto;
   z-index: 2;
   position: absolute;
-  font-size: 50px;
+  font-size: 35px;
   font-style: Regular;
   text-align: left;
   font-family: Cherry Bomb;
@@ -55,14 +55,14 @@
   text-decoration: none;
 }
 .home-text04 {
-  top: 606px;
-  left: 151px;
+  top: 402px;
+  left: 64px;
   color: rgba(255, 255, 255, 1);
-  width: 828px;
+  width: 513px;
   height: auto;
   z-index: 3;
   position: absolute;
-  font-size: 40px;
+  font-size: 25px;
   font-style: Regular;
   text-align: left;
   font-family: Love Ya Like A Sister;
@@ -72,30 +72,30 @@
   text-decoration: none;
 }
 .home-rectangle1 {
-  top: 97px;
-  left: 1140.7469482421875px;
-  width: 705px;
-  height: 790px;
+  top: 60.35083770751953px;
+  left: 712.9668579101562px;
+  width: 441px;
+  height: 492px;
   z-index: 4;
   position: absolute;
 }
 .home-rectangle2 {
-  top: 151.82449340820312px;
-  left: 1186.060791015625px;
-  width: 610px;
-  height: 606px;
+  top: 94.46118927001953px;
+  left: 741.2879638671875px;
+  width: 381px;
+  height: 377px;
   z-index: 5;
   position: absolute;
 }
 .home-text09 {
-  top: 782.1023559570312px;
-  left: 1145.97607421875px;
+  top: 486.6034240722656px;
+  left: 716.2350463867188px;
   color: rgba(128, 158, 215, 1);
-  width: 319px;
+  width: 199px;
   height: auto;
   z-index: 6;
   position: absolute;
-  font-size: 45px;
+  font-size: 30px;
   font-style: Regular;
   text-align: left;
   font-family: Permanent Marker;
@@ -105,14 +105,14 @@
   text-decoration: none;
 }
 .home-text11 {
-  top: 792.8856201171875px;
-  left: 1480.009521484375px;
+  top: 493.3125px;
+  left: 925.0059814453125px;
   color: rgba(128, 158, 215, 1);
-  width: 315px;
+  width: 197px;
   height: auto;
   z-index: 7;
   position: absolute;
-  font-size: 45px;
+  font-size: 30px;
   font-style: Regular;
   text-align: left;
   font-family: Permanent Marker;
