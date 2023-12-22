@@ -30,7 +30,7 @@ body{
     height: 56vw;
     margin: 0;
     padding: 0;
-    background-image: url('assets/header/header_shape.svg'); /* Set the image as a background */
+    background-image: url('/assets/header/header_shape.svg'); /* Set the image as a background */
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -108,7 +108,7 @@ body{
     max-height: 500px;
     top: 6vh;
     left: 63vw;
-    background-image: url('assets/header/Pic.png'); /* Set the image as a background */
+    background-image: url('/assets/header/Pic.png'); /* Set the image as a background */
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
