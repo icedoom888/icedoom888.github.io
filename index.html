@@ -12,7 +12,15 @@
             <h2>Ciao, I'm</h2>
             <h1>Alberto Pennino</h1>
             <h3>I work on awesome AI projects.</h3>
-            <p>Computer Vision and Computer Graphics <br>Research Engineer @ ETH Zurich.<br>I specialise in Generative AI for Images and Videos!</p>
+            <p>Computer Vision and Computer Graphics <br>Research Engineer @ ETH Zurich.<br>I specialise in Generative AI for Images and Videos!</p>   
+            <div id="contact-links">
+                <a href="https://drive.google.com/file/d/15Sf2V0KKDQgUCGTUrdw9fwRSB7SjcwjM/view?usp=sharing" target=”_blank”>
+                    <img class="links" id="cv-top" src="./assets/header/cv.png">
+                </a>
+                <a href="mailto:alberto.pennino.8@gmail.com" target=”_blank”>
+                    <img class="links" id="email-top" href="" src="./assets/header/email.png">
+                </a>
+            </div>
         </div>
 
         <div id="picture">
@@ -49,7 +57,7 @@
                     <a href="https://drive.google.com/file/d/1cpT7ifdXllCYxA5no4TWDv9PNPuLYSLi/view?usp=sharing" target=”_blank”>
                         <img class="links" href="" src="./assets/images/report.png">
                     </a>
-                    <a href="" target=”_blank”>
+                    <a href="https://drive.google.com/file/d/1iUDJmFC1f0BWTUzbAcyoAR-1HrpbwxZR/view?usp=share_link" target=”_blank”>
                         <img class="links" href="" src="./assets/images/slides.png">
                     </a>
                 </div>
@@ -60,63 +68,94 @@
                     ArtWalks has been used in the production of multiple art-piece videos that have been shown within an immersive concert setting accompanied by the music the artist. 
                 </p>
         
-                <video width="320" height="240" controls id="artwalks-vid-1">
-                    <source src="./assets/videos/vangogh.mp4">
+                <video controls id="artwalks-vid-1">
+                    <source src="https://drive.google.com/uc?export=download&id=1yzeQE1CTrRS2O8xLANNb4eq-qOBYLhwZ">
                     Your browser does not support the video tag.
                 </video>
-                <video width="320" height="240" controls id="artwalks-vid-2">
-                    <source src="./assets/videos/classic.mp4">
+                <video controls id="artwalks-vid-2">
+                    <source src="https://drive.google.com/uc?export=download&id=1qLVBhwYEWUOj7XCAg90ADLoVKeKczAxp">
                     Your browser does not support the video tag.
                 </video>
             </div>
 
             <div class="project right" id="avatarforge">
-                <img src="./assets/images/Avatarforge_box.png" id="avatarforge-background">
                 <h2 class="project-title">AvatarForge</h2>
                 <div class="project-links">
-                    <a href="https://github.com/icedoom888/ArtWalks" target=”_blank”>
+                    <a href="https://github.com/icedoom888/AvatarForge" target=”_blank”>
                         <img class="links" href="" src="./assets/header/github.png">
                     </a>
-                    <a href="https://drive.google.com/file/d/1cpT7ifdXllCYxA5no4TWDv9PNPuLYSLi/view?usp=sharing" target=”_blank”>
+                    <a href="https://drive.google.com/file/d/1aoNPC6qHW5aXM0NB3IedmnBSMZi2N4Tq/view?usp=share_link" target=”_blank”>
                         <img class="links" href="" src="./assets/images/report.png">
                     </a>
-                    <a href="" target=”_blank”>
+                    <a href="https://drive.google.com/file/d/13aJCN-QMOtPQSnJGs7MZQVEZirOJto1Q/view?usp=share_link" target=”_blank”>
                         <img class="links" href="" src="./assets/images/slides.png">
                     </a>
                 </div>
                 <p class="project-desc">With AvatarForge I developed a fully open-source pipeline for Digital Avatar Generation. Provide a 3 minute video recording of yourself and  train your own digital twin. The pipeline is completely open-source and can be accessed via Docker container. Within AvatarForge, I offer two separate models for avatar generation:</p>
-                <ul>
-                    <li>A puppeteering model where only the mouth region is generated, aligned with the new audio, and then pasted over the original video. 
-                        </li>
-                    <li>A head-motion model where the full half-body avatar is generated, and both mouth and head motion are aligned with the input audio signal.</li>
-                </ul>    
+                <br>
+                <ul id="avatarforge-bullets">
+                    <li>A puppeteering model where only the mouth region is generated, aligned with the new audio, and then pasted over the original video. </li>
+                    <li>A head-motion model where the full half-body avatar is generated, and both mouth and head motion are aligned with the input audio signal. </li>
+                </ul>
                 <p class="project-desc">
                     Within the realisation of this project we launched a deep-fake awareness initiative in Swiss schools in collaboration with SRF to prevent divulgation of fake news.Moreover, this technology has been used in the production of an art piece video in collaboration with ETH AI Center and artist Nora Al-Badri, which will be displayed in 2024 @KW Museum in Berlin.
                 </p>
+                
+                <div id="video-stack">
+                    <video controls id="avatarforge-vid-1">
+                        <source src=".https://drive.google.com/uc?export=download&id=1eHehJFtxiy3pmiD1FgGNpovgfOoEx3NI">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls id="avatarforge-vid-2">
+                        <source src="https://drive.google.com/uc?export=download&id=1_3lBihGhNcQMgPV2d1_1jjHZd-ZCsbJP">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <img src="./assets/images/Avatarforge_box.png" id="avatarforge-background">
             </div>
 
             <div class="project left" id="realdibs">
-                <img src="./assets/images/Realdibs_box.png" id="realdibs-background">
                 <h2 class="project-title">REAL-DIBS</h2>
                 <h2 class="project-subtitle">Rendering Alternative Deep Image Based Sansoucci </h2>
                 <div class="project-links">
-                    <a href="https://github.com/icedoom888/ArtWalks" target=”_blank”>
+                    <a href="https://github.com/icedoom888/Master-Thesis-REALDIBS" target=”_blank”>
                         <img class="links" href="" src="./assets/header/github.png">
                     </a>
-                    <a href="https://drive.google.com/file/d/1cpT7ifdXllCYxA5no4TWDv9PNPuLYSLi/view?usp=sharing" target=”_blank”>
+                    <a href="https://drive.google.com/file/d/14zPN_Afxu_KOcW4EUS0YzSqEo_VmOw4I/view?usp=share_link" target=”_blank”>
                         <img class="links" href="" src="./assets/images/report.png">
                     </a>
-                    <a href="" target=”_blank”>
+                    <a href="https://drive.google.com/file/d/1WqJR021oRt2-tqtSSvFtEFrBmJspUxTh/view?usp=sharing" target=”_blank”>
                         <img class="links" href="" src="./assets/images/slides.png">
                     </a>
                 </div>
-                <p class="project-desc">During my master thesis, I build upon new advances in neural networks and differentiable rendering to synthesize novel views based on an initial 3D reconstruction and the original input views. I proposed a novel hybrid method called Morph-GAN that combines advantages through per vertex geometry refinement with the texture generation capabilities of GAN models within a differentiable rendering framework. 
+                <p class="project-desc">During my master thesis, I build upon new advances in neural networks and differentiable rendering to synthesize novel views based on an initial 3D reconstruction and the original input views. <br>
+                    I proposed a novel hybrid method called Morph-GAN that combines advantages through per vertex geometry refinement with the texture generation capabilities of GAN models within a differentiable rendering framework. <br>
                     Our experiments show that the proposed model is capable of significantly improving image quality and the overall realism of generated images.
                 </p>
+
+                <video controls id="realdibs-vid">
+                    <source src="https://drive.google.com/uc?export=download&id=14kjYo8gkNwH8-Fw8QIkv9erCNnwUxaDH">
+                    Your browser does not support the video tag.
+                </video>
+
+                <img src="./assets/images/Realdibs_box.png" id="realdibs-background">
             </div>
         </div>
     </main>
 
-    <footer>
-    </footer>
+    <div id="footer">
+        <div id="footer-links">
+            <a href="https://drive.google.com/file/d/15Sf2V0KKDQgUCGTUrdw9fwRSB7SjcwjM/view?usp=sharing" target=”_blank”>
+                <img class="links" id="cv" src="./assets/header/cv.png">
+            </a>
+            <a href="#top">
+                <img class="links" id="arrows" href="" src="./assets/header/arrow.png">
+            </a>
+            <a href="mailto:alberto.pennino.8@gmail.com" target=”_blank”>
+                <img class="links" id="email" href="" src="./assets/header/email.png">
+            </a>
+        </div>
+        <img src="./assets/images/Footing_box.png" id="footer-background">
+    </div>
 </body>
