@@ -183,8 +183,8 @@ body{
 
 #artwalks-vid-2{
     position: relative;
-    top: 1vw;
     left: 15vw;
+    top: 4vh;
     width: 35%;
     height: 33%;
 
@@ -195,7 +195,7 @@ body{
 
 #artwalks p{
     width: 60%;
-    height: 30%;
+    height: auto;
 }
 
 #artwalks .project-links{
