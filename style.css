@@ -150,7 +150,7 @@ body{
 }
 
 #project-title{
-    margin: 0px;
+    margin-top: 40px;
 }
 
 #artwalks-background{
@@ -265,7 +265,7 @@ body{
 
 #realdibs{
     width: 100vw;
-    top: -250px;
+    top: -290px;
     height: 90vh;
 }
 
@@ -315,7 +315,7 @@ body{
 
 #naturalvoices{
     width: 90vw;
-    top: -230px;
+    top: -250px;
     height: 100vh;
 }
 
@@ -353,7 +353,7 @@ body{
 
 #naturalvoices .project-title{
     margin-left: auto;
-    margin-right: 5vw;
+    margin-right: 4.70vw;
 }
 
 #naturalvoices .project-desc{
@@ -375,6 +375,62 @@ body{
     width: 9.3vw;
 }
 
+#theaiquest{
+    width: 100vw;
+    top: -350px;
+    height: 90vh;
+}
+
+#theaiquest-background{
+    top: -5vh;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    left: 0;
+    z-index: -1;
+}
+
+#theaiquest .project-title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#theaiquest .project-desc{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
+}
+
+#theaiquest .grow:hover{ 
+    transform: scale(1.1); 
+}
+
+.flex-container {
+    margin-top: 2vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    overflow: auto;
+    height: 50vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card {
+    flex: 1 0 25vw;
+    height: 25vw;
+    width: 25vw;
+    margin: 2px;
+}
+.card *{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+
 
 .project{
     position: relative;
@@ -388,6 +444,10 @@ body{
 
 .left{
     text-align: left;
+}
+
+.centre{
+    text-align: center;
 }
 
 .right{
@@ -416,7 +476,7 @@ h3{
 }
 
 p{
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Roboto";
     color: #F1F1FE;
 }
@@ -450,9 +510,9 @@ p{
 
 .project-desc{
     font-family: "Roboto";
-    font-size: calc(5px + 1vw);
+    font-size: calc(4px + 1vw);
     width: 50%;
-    margin: 0% 0% 0% 5vw;
+    margin: 3vh 0% 0% 5vw;
     padding: 0;
     opacity: 1;
 }
@@ -474,11 +534,19 @@ li {
     color: #1A1A74;
 }
 
+#naturalvoices *{
+    color: #F1F1FE;
+}
+
+#theaiquest *{
+    color: #1A1A74;
+}
+
 #footer{
     width: 100vw;
     height: 20vw;
     position: relative;
-    top: -30vh;
+    top: -35vh;
     margin: 0;
     padding: 0;
 }
@@ -510,7 +578,6 @@ li {
     overflow: hidden;
 }
 
-
 #arrows{
     height: 8vw !important;
     width: 7vw !important;
@@ -529,7 +596,6 @@ li {
     width: 5vw !important;
     overflow: hidden;
 }
-
 
 .grow { 
     transition: all .2s ease-in-out; 
