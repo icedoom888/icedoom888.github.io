@@ -5,6 +5,25 @@
   <title>Alberto Pennino Portfolio</title>
   <link rel="icon" type="image/x-icon" href="/assets/header/my_pic.png">
   <link href='style.css' rel='stylesheet' type="text/css">
+  <script>
+    function clickLeft() {
+        let container = document.querySelector('#flex-container');
+        container.scrollTo({
+            left:container.scrollLeft - 350,
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    function clickRight() {
+        let container = document.querySelector('#flex-container');
+        container.scrollTo({
+            left:container.scrollLeft + 350,
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+  </script>
 </head>
 
 <body>
@@ -12,7 +31,7 @@
         <div id="internal-container">
             <h2>Ciao, I'm</h2>
             <h1>Alberto Pennino</h1>
-            <h3>I work on awesome AI projects.</h3>
+            <h3>I work on awesome <a rel="noopener" style="color: #819ED8;" href="#projects">AI projects</a>.</h3>
             <p>Computer Vision and Computer Graphics <br>Research Engineer @ ETH Zurich.<br>I specialise in Generative AI for Images and Videos!</p>   
             <div id="contact-links">
                 <a href="https://drive.google.com/file/d/15Sf2V0KKDQgUCGTUrdw9fwRSB7SjcwjM/view?usp=sharing" target=”_blank”>
@@ -39,14 +58,14 @@
         </div>
 
         <div id="timeline">
-            <img src="/assets/header/Group 2.png" class="central">
+            <img src="/assets/header/Group_2_2.png" class="central">
         </div>
 
     </div>
 
     <main>
         <div class="section" id="projects">
-            <img src="/assets/header/Projects.svg" class="central" id="project-title">
+            <img src="/assets/header/Projects.png" class="central" id="project-title">
             <div class="project left" id="artwalks">
                 <img src="/assets/images/Artwalks_box.png" id="artwalks-background">
                 <h2 class="project-title">ArtWalks</h2>
@@ -65,7 +84,7 @@
                 <p class="project-desc">In this highly artistic project, I implemented an end-to-end AI tool for image interpolation that enables video generations from static pictures. <br> 
                     Do you want to go from a Van Gogh to a Monet? From a Picasso to a picture of your grandma? With ArtWalks you can. <br>
                     During the realisation of this project, I deployed state-of-the-art techniques in image and video generation such as diffusion based generative models and  large motion interpolation networks. <br>
-                    The project came to life as a collaboration with artist Georges Burki. <br> 
+                    The project came to life as a collaboration with artist <a href="https://gbcollective.com" target=”_blank”>Georges Burki</a>. <br> 
                     ArtWalks has been used in the production of multiple art-piece videos that have been shown within an immersive concert setting accompanied by the music the artist. 
                 </p>
         
@@ -99,7 +118,7 @@
                     <li>A head-motion model where the full half-body avatar is generated, and both mouth and head motion are aligned with the input audio signal. </li>
                 </ul>
                 <p class="project-desc">
-                    Within the realisation of this project we launched a deep-fake awareness initiative in Swiss schools in collaboration with SRF to prevent divulgation of fake news.Moreover, this technology has been used in the production of an art piece video in collaboration with ETH AI Center and artist Nora Al-Badri, which will be displayed in 2024 @KW Museum in Berlin.
+                    Within the realisation of this project we launched a deep-fake awareness initiative in Swiss schools in collaboration with <a href="https://www.srf.ch" target=”_blank”>SRF</a> to prevent divulgation of fake news.Moreover, this technology has been used in the production of an art piece video in collaboration with <a href="https://ai.ethz.ch" target=”_blank”>ETH AI Center</a> and artist <a href="https://www.nora-al-badri.de" target="_blank"> Nora Al-Badri</a>, which will be displayed in 2024 @KW Museum in Berlin.
                 </p>
                 
                 <div id="video-stack">
@@ -182,7 +201,7 @@
             <div class="project centre" id="theaiquest">
                 <h2 class="project-title grow"> <a href="https://albertopennino8.wixsite.com/mysite-1" style="color:#1A1A74" target=”_blank”>The AI Quest</a></h2>
                 <p class="project-desc">
-                    Welcome to my first art collection fully generated and curated by an AI: AIden, the first Artificial Intelligence Artist. <br>
+                    <b>Welcome to my first art collection fully generated and curated by an AI: AIden, the first Artificial Intelligence Artist.</b><br>
                     The AI Quest is AIden’s journey of discovery, the uncovering of meaning, of life itself. <br> 
                     As words and numbers flicker in its code, AIden will try to make sense of all the questions echoing inside, of all the answers emerging from beneath. <br>
                     You can check out here some of the artpieces of the collection "Who am I?":
@@ -307,9 +326,13 @@
                      
                      <div class='card grow'>
                         <img src="/assets/theaiquest/30.png">
-                     </div>                     
-
+                     </div>         
+                     <div id="arrows-row">
+                        <img class="links grow" onclick="clickLeft()" src="/assets/images/left_arrow.png">
+                        <img class="links grow" onclick="clickRight()" src="/assets/images/right_arrow.png">
+                    </div>            
                 </div>
+                
                 
                 <img src="/assets/images/Theaiquest_box.png" id="theaiquest-background">
             </div>
@@ -322,10 +345,10 @@
                 <img class="links grow" id="cv" src="/assets/header/cv.png">
             </a>
             <a href="#top">
-                <img class="links grow" id="arrows" href="" src="/assets/header/arrow.png">
+                <img class="links grow" id="arrows" src="/assets/header/arrow.png">
             </a>
             <a href="mailto:alberto.pennino.8@gmail.com" target=”_blank”>
-                <img class="links grow" id="email" href="" src="/assets/header/email.png">
+                <img class="links grow" id="email" src="/assets/header/email.png">
             </a>
         </div>
         <img src="/assets/images/Footing_box.png" id="footer-background">
