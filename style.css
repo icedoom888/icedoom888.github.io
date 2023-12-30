@@ -14,13 +14,130 @@ html{
 }
 
 body{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: #F1F1FE;
     margin: 0;
     padding: 0;
     overflow: scroll;
 }
+
+main{
+    text-align: center;
+}
+
+h1{
+    color: #FFF;
+    font-family: "Coiny";
+    font-size: 55px;
+    font-style: "normal";
+    font-weight: 400;
+    line-height: 55px;
+}
+
+h2{
+    color: #F1F1FE;
+    font-size: 42px;
+}
+
+h3{
+    color: #819ED8;
+    font-size: 25px;
+
+}
+
+p{
+    font-size: 16px;
+    font-family: "Roboto";
+    color: #F1F1FE;
+}
+
+li {
+    font-family: "Roboto";
+    font-size: calc(3px + 1vw);
+}
+
+/* Classes */
+
+.links{
+    position: relative;
+    height: 3.3vw;
+    width: 3.3vw;
+    overflow: hidden;
+}
+
+.central{
+    width: 85%;
+}
+
+.project-links{
+    position: absolute;
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Distribute space between the images */
+    align-items: center; /* Center the images vertically */
+}
+
+.project{
+    position: relative;
+    height: 100vh;
+    width: 95vw;
+    margin: 0px;
+    padding: 0px;
+    opacity: 1;
+    max-height: 1000px;
+    min-height: 500px;
+}
+
+.left{
+    text-align: left;
+}
+
+.centre{
+    text-align: center;
+}
+
+.right{
+    left: 10vw;
+    text-align: right;
+}
+
+.project-title{
+    position: relative;
+    font-size: calc(10px + 2vw);
+    width: 50%;
+    margin: 10% 0% 0% 4%;
+    padding: 0;
+}
+
+.project-subtitle{
+    position: relative;
+    font-size: calc(6px + 1.7vw);
+    width: 50%;
+    margin: -1% 0% 0% 4%;
+    line-height: 30px;
+    padding: 0;
+}
+
+.project-desc{
+    font-family: "Roboto";
+    font-size: calc(3px + 1vw);
+    width: 50%;
+    margin: 3% 0% 0% 4%;
+    padding: 0;
+    opacity: 1;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+.grow:hover { 
+transform: scale(1.3); 
+}
+
+/* All elements */
+
+/* Header */
 
 #header-container {
     position: relative;
@@ -116,41 +233,12 @@ body{
     border-radius: 10px;
 }
 
-#link-row {   
+#link-row{   
     width: 58%;
     position: relative;
     top: 82%;
     margin-left: auto; 
     margin-right: auto;
-    display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Distribute space between the images */
-    align-items: center; /* Center the images vertically */
-}
-
-#arrows-row{
-    margin-top: 11%;
-    width: 100%;
-    position: absolute;
-    margin-left: auto; 
-    margin-right: auto;
-    display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Distribute space between the images */
-    align-items: center; /* Center the images vertically */
-}
-
-.links{
-    position: relative;
-    height: 3.3vw;
-    width: 3.3vw;
-    overflow: hidden;
-}
-
-.central{
-    width: 85vw;
-}
-
-.project-links{
-    position: absolute;
     display: flex; /* Use flexbox layout */
     justify-content: space-between; /* Distribute space between the images */
     align-items: center; /* Center the images vertically */
@@ -167,28 +255,40 @@ body{
     margin-top: 40px;
 }
 
+/* ArtWalks */
+#artwalks{
+    width: 95vw;
+    height: 110vh;
+    min-height: 700px;
+}
+
+#artwalks *{
+    color: #1A1A74;
+}
+
 #artwalks-background{
     top: -15vh;
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: 1;
     padding: 0;
     margin: 0;
+    left: 0;
     overflow: hidden;
     z-index: -1;
 }
 
-#artwalks{
-    height: 110vh;
+#artwalks .project-desc{
+    width: 60%;
+    height: auto;
 }
 
 #artwalks-vid-1{
     position: absolute;
-    left: 65vw;
-    top: 10vh;
-    width: 25vw;
-    height: 65vh;
+    left: 67%;
+    top: 10%;
+    width: 25%;
+    height: 60%;
 
     border-radius: 25px !important;
     object-fit: cover !important;
@@ -197,37 +297,38 @@ body{
 
 #artwalks-vid-2{
     position: relative;
-    left: 15vw;
-    top: 4vh;
-    width: 35%;
+    left: 13%;
+    width: 38%;
     height: 33%;
+    margin-top: 2.5%;
 
     border-radius: 25px !important;
     object-fit: cover !important;
 
 }
 
-#artwalks p{
-    width: 60%;
-    height: auto;
+#artwalks .project-links{
+    top: 2.5%;
+    right: calc(140px + 30vw);
+    width: 14%;
 }
 
-#artwalks .project-links{
-    top: 2.5vh;
-    left: calc(140px + 30vw);
-    width: 14vw;
-}
+/* AvatarForge */
 
 #avatarforge{
     width: 90vw;
-    top: -100px;
-    height: 120vh;
+    margin-top: -10%;
+    height: 135vh;
+}
+
+#avatarforge *{
+    color: #F1F1FE;
 }
 
 #avatarforge-background{
-    top: -24vh;
+    top: -20%;
     width: 100%;
-    height: 110%;
+    height: 100%;
     position: absolute;
     opacity: 1;
     padding: 0;
@@ -239,34 +340,34 @@ body{
 
 #avatarforge .project-title{
     margin-left: auto;
-    margin-right: 5vw;
+    margin-right: 4%;
 }
 
 #avatarforge .project-desc{
-    margin-top: 20px;
     margin-left: auto;
-    margin-right: 5vw;
-    width: 35vw;
+    margin-right: 4%;
+    width: 40%;
 }
 
 #avatarforge-bullets{
     margin-left: auto;
-    margin-right: 5vw;
-    width: 35vw;
+    margin-right: 4%;
+    width: 40%;
 }
 
 #avatarforge .project-links{
-    top: 1.0vh;
+    top: 1.0%;
     right: calc(125px + 20vw);
-    width: 14vw;
+    width: 14%;
 }
 
 #avatarforge #video-stack{
     position: absolute;
-    top: 10vh;
-    right: 47vw;
-    width: 30vw;
+    top: 10%;
+    right: 55%;
+    width: 30%;
 }
+
 #avatarforge #video-stack *{
     position: relative;
     width: 32vw;
@@ -276,15 +377,20 @@ body{
     margin-bottom: 2vh;
 }
 
+/* RealDibs */
 
 #realdibs{
+    margin-top: -25%;
     width: 100vw;
-    top: -290px;
-    height: 90vh;
+    height: 85vh;
+}
+
+#realdibs *{
+    color: #1A1A74;
 }
 
 #realdibs-background{
-    top: -5vh;
+    top: -5%;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -292,45 +398,43 @@ body{
     margin: 0;
     overflow: hidden;
     left: 0;
-    opacity: 1;
     z-index: -1;
 }
 
 #realdibs .project-desc{
-    margin-top: 20px;
-    width: 25vw;
-    height: 30%;
+    width: 23%;
     z-index: 1;
-    opacity: 0.8;
-}
-
-#realdibs .project-subtitle{
-    width: 50%;
-    line-height: 30px;
-    margin: -1% 0% 0% 5vw;
+    opacity: 1;
 }
 
 #realdibs .project-links{
-    top: 3.5vh;
+    top: 6%;
     left: calc(125px + 45vw);
-    width: 14vw;
+    width: 14%;
 }
 
 #realdibs-vid{
     position: absolute;
-    left: 35vw;
-    top: calc(10vw);
-    width: 45vw;
-    height: 55vh;
+    left: 30%;
+    top: 23%;
+    width: 50%;
+    height: 65%;
 
     border-radius: 25px !important;
     object-fit: cover !important;
 }
 
+/* Natural Voices */
+
 #naturalvoices{
+    margin-top: 0;
+    margin-bottom: 0;
     width: 90vw;
-    top: -250px;
     height: 100vh;
+}
+
+#naturalvoices *{
+    color: #F1F1FE;
 }
 
 #naturalvoices-background{
@@ -389,14 +493,20 @@ body{
     width: 9.3vw;
 }
 
+/* The Ai Quest */
+
 #theaiquest{
+    margin-top: -6%;
     width: 100vw;
-    top: -350px;
     height: 94vh;
 }
 
+#theaiquest *{
+    color: #1A1A74;
+}
+
 #theaiquest-background{
-    top: -5vh;
+    top: -5%;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -414,20 +524,19 @@ body{
 }
 
 #theaiquest .project-desc{
-    margin-top: 1vh;
+    margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
-    width: 95vw;
+    width: 95%;
 }
 
 #theaiquest .grow:hover{ 
     transform: scale(1.1); 
 }
 
-.flex-container {
-    margin-top: 2vh;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+#theaiquest .flex-container {
+    margin-top: 3%;
+    margin-bottom: 3%;
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -436,134 +545,36 @@ body{
     flex-wrap: nowrap;
 }
 
-.card {
-    flex: 1 0 25vw;
+#theaiquest .card {
+    flex: 1 0 25%;
     height: 25vw;
     width: 25vw;
     margin: 2px;
 }
-.card *{
+
+#theaiquest .card *{
     width: 100%;
     height: 100%;
     border-radius: 2%;
 }
 
-
-.project{
-    position: relative;
-    height: 100vh;
-    width: 95vw;
-    margin: 0px;
-    padding: 0px;
-    opacity: 1;
-
+#arrows-row{
+    margin-top: 11%;
+    width: 100%;
+    position: absolute;
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Distribute space between the images */
+    align-items: center; /* Center the images vertically */
 }
 
-.left{
-    text-align: left;
-}
-
-.centre{
-    text-align: center;
-}
-
-.right{
-    left: 10vw;
-    text-align: right;
-}
-
-h1{
-    color: #FFF;
-    font-family: "Coiny";
-    font-size: 55px;
-    font-style: "normal";
-    font-weight: 400;
-    line-height: 55px;
-}
-
-h2{
-    color: #F1F1FE;
-    font-size: 42px;
-}
-
-h3{
-    color: #819ED8;
-    font-size: 25px;
-
-}
-
-p{
-    font-size: 16px;
-    font-family: "Roboto";
-    color: #F1F1FE;
-}
-
-.section{
-    text-align: center;
-}
-
-.section-title{
-    color: #F1F1FE;
-    text-align: center;
-    font-size: medium;
-}
-
-.project-title{
-    position: relative;
-    font-size: calc(10px + 2vw);
-    width: 50%;
-    margin: 9% 0% 0% 5vw;
-    padding: 0;
-
-}
-
-.project-subtitle{
-    position: relative;
-    font-size: calc(6px + 1.7vw);
-    width: 50vw;
-    margin: -2% 0% 0% 5vw;
-    padding: 0;
-}
-
-.project-desc{
-    font-family: "Roboto";
-    font-size: calc(4px + 1vw);
-    width: 50%;
-    margin: 3vh 0% 0% 5vw;
-    padding: 0;
-    opacity: 1;
-}
-
-li {
-    font-family: "Roboto";
-    font-size: calc(5px + 1vw);
-}
-
-#artwalks *{
-    color: #1A1A74;
-}
-
-#avatarforge *{
-    color: #F1F1FE;
-}
-
-#realdibs *{
-    color: #1A1A74;
-}
-
-#naturalvoices *{
-    color: #F1F1FE;
-}
-
-#theaiquest *{
-    color: #1A1A74;
-}
+/* Footer */
 
 #footer{
     width: 100vw;
     height: 20vw;
     position: relative;
-    top: -35vh;
     margin: 0;
     padding: 0;
 }
@@ -595,13 +606,6 @@ li {
     overflow: hidden;
 }
 
-#arrows{
-    height: 8vw !important;
-    width: 7vw !important;
-    overflow: hidden;
-    top: -6vw;
-}
-
 #cv{
     height: 6vw !important;
     width: 6vw !important;
@@ -614,10 +618,9 @@ li {
     overflow: hidden;
 }
 
-.grow { 
-    transition: all .2s ease-in-out; 
-    }
-    
-.grow:hover { 
-transform: scale(1.3); 
+#arrows{
+    height: 8vw !important;
+    width: 7vw !important;
+    overflow: hidden;
+    top: -6vw;
 }
