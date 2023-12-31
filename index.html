@@ -5,6 +5,7 @@
   <title>Alberto Pennino Portfolio</title>
   <link rel="icon" type="image/x-icon" href="/assets/header/my_pic.png">
   <link href='style.css' rel='stylesheet' type="text/css">
+  <link href="exp.css" rel="stylesheet" type="text/css">
   <script>
     function clickLeft() {
         let container = document.querySelector('#flex-container');
@@ -31,7 +32,7 @@
         <div id="internal-container">
             <h2>Ciao, I'm</h2>
             <h1>Alberto Pennino</h1>
-            <h3>I work on awesome <a style="color: #819ED8;" href="#projects">AI projects</a>.</h3>
+            <h3>I work on awesome <a style="color: #819ED8;" href="#project-title">AI projects</a>.</h3>
             <p>Computer Vision and Computer Graphics <br>Research Engineer @ ETH Zurich.<br>I specialise in Generative AI for Images and Videos!</p>   
             <div id="contact-links">
                 <a href="https://drive.google.com/file/d/15Sf2V0KKDQgUCGTUrdw9fwRSB7SjcwjM/view?usp=sharing" target=”_blank”>
@@ -67,136 +68,163 @@
         <img src="/assets/header/Projects.png" class="central" id="project-title">
 
         <div class="project left" id="artwalks">
-            <h2 class="project-title">ArtWalks</h2>
-            <h2 class="project-subtitle">via Latent Diffusion Models</h2>
-            <div class="project-links">
-                <a href="https://github.com/icedoom888/ArtWalks" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/header/github.png">
-                </a>
-                <a href="https://drive.google.com/file/d/1cpT7ifdXllCYxA5no4TWDv9PNPuLYSLi/view?usp=sharing" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/images/report.png">
-                </a>
-                <a href="https://drive.google.com/file/d/1iUDJmFC1f0BWTUzbAcyoAR-1HrpbwxZR/view?usp=share_link" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/images/slides.png">
-                </a>
-            </div>
-            <p class="project-desc">In this highly artistic project, I implemented an end-to-end AI tool for image interpolation that enables video generations from static pictures. <br> 
-                Do you want to go from a Van Gogh to a Monet? From a Picasso to a picture of your grandma? With ArtWalks you can. <br>
-                During the realisation of this project, I deployed state-of-the-art techniques in image and video generation such as diffusion based generative models and  large motion interpolation networks. <br>
-                The project came to life as a collaboration with artist <a href="https://gbcollective.com" target=”_blank”>Georges Burki</a>. <br> 
-                ArtWalks has been used in the production of multiple art-piece videos that have been shown within an immersive concert setting accompanied by the music the artist. 
-            </p>
+            <div class="content-container">
+                <div class="grid-container">
+                    <div class="grid-child">
+                        <h2 class="project-title">ArtWalks</h2>
+                        <h2 class="project-subtitle">via Latent Diffusion Models</h2>
+                    </div>
+                
+                    <div class="grid-child project-links">
+                        <a href="https://github.com/icedoom888/ArtWalks" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/header/github.png">
+                        </a>
+                        <a href="https://drive.google.com/file/d/1cpT7ifdXllCYxA5no4TWDv9PNPuLYSLi/view?usp=sharing" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/images/report.png">
+                        </a>
+                        <a href="https://drive.google.com/file/d/1iUDJmFC1f0BWTUzbAcyoAR-1HrpbwxZR/view?usp=share_link" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/images/slides.png">
+                        </a>
+                    </div>
+                  
+                </div>
     
-            <video controls id="artwalks-vid-1">
-                <source src="https://github.com/icedoom888/icedoom888.github.io/assets/9220778/bd4e072d-9fef-4a1e-92f4-b8582cbc4601">
-                Your browser does not support the video tag.
-            </video>
-            <video controls id="artwalks-vid-2">
-                <source src="https://github.com/icedoom888/icedoom888.github.io/assets/9220778/ce7643b2-e3bf-4376-b3cf-be6b9ecd06e9">
-                Your browser does not support the video tag.
-            </video>
+                <p class="project-desc">In this highly artistic project, I implemented an end-to-end AI tool for image interpolation that enables video generations from static pictures. <br> 
+                    Do you want to go from a Van Gogh to a Monet? From a Picasso to a picture of your grandma? With ArtWalks you can. <br>
+                    During the realisation of this project, I deployed state-of-the-art techniques in image and video generation such as diffusion based generative models and  large motion interpolation networks. <br>
+                    The project came to life as a collaboration with artist <a href="https://gbcollective.com" target=”_blank”>Georges Burki</a>. <br> 
+                    ArtWalks has been used in the production of multiple art-piece videos that have been shown within an immersive concert setting accompanied by the music the artist. 
+                </p>
+        
+                <video controls id="artwalks-vid-1">
+                    <source src="https://github.com/icedoom888/icedoom888.github.io/assets/9220778/bd4e072d-9fef-4a1e-92f4-b8582cbc4601">
+                    Your browser does not support the video tag.
+                </video>
+    
+                <video controls id="artwalks-vid-2">
+                    <source src="https://github.com/icedoom888/icedoom888.github.io/assets/9220778/ce7643b2-e3bf-4376-b3cf-be6b9ecd06e9">
+                    Your browser does not support the video tag.
+                </video>
 
-            <img src="/assets/images/Artwalks_box.png" id="artwalks-background">
+            </div>
         </div>
 
         <div class="project right" id="avatarforge">
-            <h2 class="project-title">AvatarForge</h2>
-            <div class="project-links">
-                <a href="https://github.com/icedoom888/AvatarForge" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/header/github.png">
-                </a>
-                <a href="https://drive.google.com/file/d/1aoNPC6qHW5aXM0NB3IedmnBSMZi2N4Tq/view?usp=share_link" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/images/report.png">
-                </a>
-                <a href="https://drive.google.com/file/d/13aJCN-QMOtPQSnJGs7MZQVEZirOJto1Q/view?usp=share_link" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/images/slides.png">
-                </a>
+            <div class="content-container">
+                <div class="grid-container">
+                    <div class="grid-child">
+                        <h2 class="project-title">AvatarForge</h2>
+                    </div>  
+                    <div class="grid-child project-links">
+                        <a href="https://github.com/icedoom888/AvatarForge" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/header/github.png">
+                        </a>
+                        <a href="https://drive.google.com/file/d/1aoNPC6qHW5aXM0NB3IedmnBSMZi2N4Tq/view?usp=share_link" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/images/report.png">
+                        </a>
+                        <a href="https://drive.google.com/file/d/13aJCN-QMOtPQSnJGs7MZQVEZirOJto1Q/view?usp=share_link" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/images/slides.png">
+                        </a>
+                    </div>
+                </div>
+                
+                <p class="project-desc">With AvatarForge I developed a fully open-source pipeline for Digital Avatar Generation. Provide a 3 minute video recording of yourself and  train your own digital twin. The pipeline is completely open-source and can be accessed via Docker container. Within AvatarForge, I offer two separate models for avatar generation:</p>
+                <br>
+                <ul id="avatarforge-bullets">
+                    <li>A puppeteering model where only the mouth region is generated, aligned with the new audio, and then pasted over the original video. </li>
+                    <li>A head-motion model where the full half-body avatar is generated, and both mouth and head motion are aligned with the input audio signal. </li>
+                </ul>
+                <p class="project-desc final">
+                    Within the realisation of this project we launched a deep-fake awareness initiative in Swiss schools in collaboration with <a href="https://www.srf.ch" target=”_blank”>SRF</a> to prevent divulgation of fake news.Moreover, this technology has been used in the production of an art piece video in collaboration with <a href="https://ai.ethz.ch" target=”_blank”>ETH AI Center</a> and artist <a href="https://www.nora-al-badri.de" target="_blank"> Nora Al-Badri</a>, which will be displayed in 2024 @KW Museum in Berlin.
+                </p>
+                
+                <div id="video-stack">
+                    <video controls id="avatarforge-vid-1">
+                        <source src="https://github.com/icedoom888/icedoom888.github.io/assets/9220778/e7443b58-88a9-45f8-aef2-d1d0a84acede">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls id="avatarforge-vid-2">
+                        <source src="https://github.com/icedoom888/icedoom888.github.io/assets/9220778/b7af8c9b-7666-4302-a8df-9525f0384dc1">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
-            <p class="project-desc">With AvatarForge I developed a fully open-source pipeline for Digital Avatar Generation. Provide a 3 minute video recording of yourself and  train your own digital twin. The pipeline is completely open-source and can be accessed via Docker container. Within AvatarForge, I offer two separate models for avatar generation:</p>
-            <br>
-            <ul id="avatarforge-bullets">
-                <li>A puppeteering model where only the mouth region is generated, aligned with the new audio, and then pasted over the original video. </li>
-                <li>A head-motion model where the full half-body avatar is generated, and both mouth and head motion are aligned with the input audio signal. </li>
-            </ul>
-            <p class="project-desc">
-                Within the realisation of this project we launched a deep-fake awareness initiative in Swiss schools in collaboration with <a href="https://www.srf.ch" target=”_blank”>SRF</a> to prevent divulgation of fake news.Moreover, this technology has been used in the production of an art piece video in collaboration with <a href="https://ai.ethz.ch" target=”_blank”>ETH AI Center</a> and artist <a href="https://www.nora-al-badri.de" target="_blank"> Nora Al-Badri</a>, which will be displayed in 2024 @KW Museum in Berlin.
-            </p>
-            
-            <div id="video-stack">
-                <video controls id="avatarforge-vid-1">
-                    <source src="https://github.com/icedoom888/icedoom888.github.io/assets/9220778/e7443b58-88a9-45f8-aef2-d1d0a84acede">
-                    Your browser does not support the video tag.
-                </video>
-                <video controls id="avatarforge-vid-2">
-                    <source src="https://github.com/icedoom888/icedoom888.github.io/assets/9220778/b7af8c9b-7666-4302-a8df-9525f0384dc1">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-
-            <img src="/assets/images/Avatarforge_box.png" id="avatarforge-background">
         </div>
 
         <div class="project left" id="realdibs">
-            <h2 class="project-title">REAL-DIBS</h2>
-            <h2 class="project-subtitle">Rendering Alternative Deep Image Based Sansoucci</h2>
-            <div class="project-links">
-                <a href="https://github.com/icedoom888/Master-Thesis-REALDIBS" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/header/github.png">
-                </a>
-                <a href="https://drive.google.com/file/d/14zPN_Afxu_KOcW4EUS0YzSqEo_VmOw4I/view?usp=share_link" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/images/report.png">
-                </a>
-                <a href="https://drive.google.com/file/d/1WqJR021oRt2-tqtSSvFtEFrBmJspUxTh/view?usp=sharing" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/images/slides.png">
-                </a>
+            <div class="content-container">
+                <div class="grid-container">
+                    <div class="grid-child">
+                        <h2 class="project-title">REAL-DIBS</h2>
+                        <h2 class="project-subtitle">Rendering Alternative Deep Image Based Sansoucci</h2>
+                    </div>  
+                    <div class="grid-child project-links">
+                        <a href="https://github.com/icedoom888/Master-Thesis-REALDIBS" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/header/github.png">
+                        </a>
+                        <a href="https://drive.google.com/file/d/14zPN_Afxu_KOcW4EUS0YzSqEo_VmOw4I/view?usp=share_link" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/images/report.png">
+                        </a>
+                        <a href="https://drive.google.com/file/d/1WqJR021oRt2-tqtSSvFtEFrBmJspUxTh/view?usp=sharing" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/images/slides.png">
+                        </a>
+                    </div>
+                </div>
+
+                <p class="project-desc">During my master thesis, I build upon new advances in neural networks and differentiable rendering to synthesize novel views based on an initial 3D reconstruction and the original input views. <br>
+                    I proposed a novel hybrid method called Morph-GAN that combines advantages through per vertex geometry refinement with the texture generation capabilities of GAN models within a differentiable rendering framework. <br>
+                    Our experiments show that the proposed model is capable of significantly improving image quality and the overall realism of generated images.
+                </p>
+    
+                <video controls id="realdibs-vid">
+                    <source src="https://github.com/icedoom888/icedoom888.github.io/assets/9220778/81a7e8a1-5b31-439f-866a-434fc6b98e73">
+                    Your browser does not support the video tag.
+                </video>
             </div>
-            <p class="project-desc">During my master thesis, I build upon new advances in neural networks and differentiable rendering to synthesize novel views based on an initial 3D reconstruction and the original input views. <br>
-                I proposed a novel hybrid method called Morph-GAN that combines advantages through per vertex geometry refinement with the texture generation capabilities of GAN models within a differentiable rendering framework. <br>
-                Our experiments show that the proposed model is capable of significantly improving image quality and the overall realism of generated images.
-            </p>
-
-            <video controls id="realdibs-vid">
-                <source src="https://github.com/icedoom888/icedoom888.github.io/assets/9220778/81a7e8a1-5b31-439f-866a-434fc6b98e73">
-                Your browser does not support the video tag.
-            </video>
-
-            <img src="/assets/images/Realdibs_box.png" id="realdibs-background">
         </div>
 
         <div class="project right" id="naturalvoices">
-            <h2 class="project-title">Natural Voices</h2>
-            <div class="project-links">
-                <a href="https://github.com/icedoom888/audio-processing" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/header/github.png">
-                </a>
-                <a href="https://github.com/icedoom888/VITS-TTS-Finetune" target=”_blank”>
-                    <img class="links grow" href="" src="/assets/header/github.png">
-                </a>
+            <div class="content-container">
+                <div class="grid-container">
+                    <div class="grid-child">
+                        <h2 class="project-title">Natural Voices</h2>
+                    </div>
+                    <div class="grid-child project-links">
+                        <a href="https://github.com/icedoom888/audio-processing" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/header/github.png">
+                        </a>
+                        <a href="https://github.com/icedoom888/VITS-TTS-Finetune" target=”_blank”>
+                            <img class="links grow" href="" src="/assets/header/github.png">
+                        </a>
+                    </div>
+                </div>
+
+                <p class="project-desc">With Natural Voices, I developed a complete voice cloning and generation pipeline. In this Text-to-Speech open source library we offer:
+                </p>
+                <p class="project-desc"> 1) A dedicated audio processing pipeline designed to transform a collection of audio/video materials to a dataset suitable for TTS training.
+                </p>
+                <p class="project-desc">
+                    The processing pipeline executes the following steps:
+                    <br><b>Audio Track Separation</b>: splits audios into vocals and non-vocals.
+                    <br><b>Audio Denoising</b>: enhances and denoises the vocal signals.
+                    <br><b>Speaker Diarization</b>: detects different speakers thorughout the audio tracks.
+                    <br><b>Speaker Embedding</b>: computes speaker embeddings across all audios.
+                    <br><b>Speaker Identification</b>: clusters speakers to get identities across all audio data.
+                </p>
+                <p class="project-desc final">
+                    2) A VITS finetuning library that leverages pretraned Meta MMS checkpoints to speed up convergence. <br> Novel voice generation can be achieved via finetuning on multiple identities at the same time via interpolation.
+                </p>
+                <div class="grow" id="naturalvoices-audio">
+                    <script>
+                        function play() {
+                            var audio = document.getElementById("audio");
+                            audio.play();
+                        }
+                    </script>
+                    <img src="/assets/images/voice.png" id="naturalvoices-image" onclick="play()"/>
+                    <audio id="audio" src="assets/audio/audio.wav"></audio>
+                </div>
             </div>
-            <p class="project-desc">With Natural Voices, I developed a complete voice cloning and generation pipeline. In this Text-to-Speech open source library we offer: </p>
-            <p class="project-desc"> 1) A dedicated audio processing pipeline designed to transform a collection of audio/video materials to a dataset suitable for TTS training.</p>
-            <p class="project-desc">
-                The processing pipeline executes the following steps:
-                <br><b>Audio Track Separation</b>: splits audios into vocals and non-vocals.
-                <br><b>Audio Denoising</b>: enhances and denoises the vocal signals.
-                <br><b>Speaker Diarization</b>: detects different speakers thorughout the audio tracks.
-                <br><b>Speaker Embedding</b>: computes speaker embeddings across all audios.
-                <br><b>Speaker Identification</b>: clusters speakers to get identities across all audio data.
-            </p>
-            <p class="project-desc">
-                2) A VITS finetuning library that leverages pretraned Meta MMS checkpoints to speed up convergence. <br> Novel voice generation can be achieved via finetuning on multiple identities at the same time via interpolation.
-            </p>
-            <div class="grow" id="naturalvoices-audio">
-                <script>
-                    function play() {
-                        var audio = document.getElementById("audio");
-                        audio.play();
-                    }
-                </script>
-                <img src="/assets/images/voice.png" id="naturalvoices-image" onclick="play()"/>
-                <audio id="audio" src="assets/audio/audio.wav"></audio>
-            </div>
-            <img src="/assets/images/Naturalvoices_box.png" id="naturalvoices-background">
         </div>
         
         <div class="project centre" id="theaiquest">
@@ -211,131 +239,128 @@
             <div class='flex-container' id="flex-container">
                 <div class='card grow'>
                     <img src="/assets/theaiquest/1.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/2.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/3.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/4.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/5.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/6.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/7.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/8.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/9.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/10.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/11.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/12.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/13.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/14.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/15.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/16.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/17.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/18.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/19.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/20.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/21.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/22.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/23.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/24.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/25.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/26.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/27.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/28.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/29.png">
-                    </div>
-                    
-                    <div class='card grow'>
+                </div>
+                
+                <div class='card grow'>
                     <img src="/assets/theaiquest/30.png">
-                    </div>         
-                    <div id="arrows-row">
+                </div>         
+                <div id="arrows-row">
                     <img class="links grow" onclick="clickLeft()" src="/assets/images/left_arrow.png">
                     <img class="links grow" onclick="clickRight()" src="/assets/images/right_arrow.png">
-                </div>            
+                </div>        
             </div>
-            
-            
-            <img src="/assets/images/Theaiquest_box.png" id="theaiquest-background">
         </div>
     </main>
 
