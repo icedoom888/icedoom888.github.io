@@ -14,6 +14,7 @@ html{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+
 }
 
 body{
@@ -33,11 +34,9 @@ main{
 
 h1{
     color: #FFF;
-    font-family: "Coiny";
     font-size: 55px;
     font-style: "normal";
     font-weight: 400;
-    line-height: 55px;
 }
 
 h2{
@@ -88,12 +87,9 @@ li {
 
 .project{
     position: relative;
-    height: 100vh;
-    width: 95vw;
     margin: 0px;
     padding: 0px;
     opacity: 1;
-    max-height: 1000px;
     min-height: 500px;
 }
 
@@ -163,10 +159,7 @@ transform: scale(1.3);
     background-image: url('/assets/header/header_shape.png'); /* Set the image as a background */
     background-repeat: no-repeat;
     overflow-x: hidden;
-    background-size: 100%;
-    padding: 0;
-    margin: 0;
-
+    background-size: 100% 100%;
 }
 
 
@@ -174,29 +167,29 @@ transform: scale(1.3);
     width: 70%;   
     padding-top: 5%;
     font-size: 4.25vw;
+    padding-bottom: 7%;
 }
 
 #internal-container h1{
     position: relative;
+    margin-top: -3%;
     width: 100%;
-    padding: 0;
     font-size: 4vw;
 }
 
 #internal-container h2{
     position: relative;
     width: 100%;
-    padding: 0;
-    margin-bottom: -7px;
     font-size: 3.25vw;
 }
 
 #internal-container h3{
+    margin-top: -1.5%;
+
     position: relative;
     width: 100%;
-    padding: 0;
-    margin: 0;
     font-size: 1.75vw;
+
 }
 
 #internal-container p{
@@ -214,9 +207,8 @@ transform: scale(1.3);
     justify-content: space-between; /* Distribute space between the images */
     align-items: center; /* Center the images vertically */
     width: 25%;
-    margin-bottom: 0;
-    padding: 0;
-    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 3%;
     margin-left: 37%;
 }
 
@@ -237,23 +229,21 @@ transform: scale(1.3);
 #picture {
     position: absolute;
     text-align: center;
-    width: 28vw;
-    height: 28vw;
-    max-width: 500px;
-    max-height: 500px;
-    top: 6vh;
-    left: 63vw;
+    width: 27%;
+    height: 68%;
+    top: 6%;
+    left: 63%;
     background-image: url('/assets/header/Pic.png'); /* Set the image as a background */
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     overflow: hidden;
 
 }
 
 #link-row{   
-    width: 58%;
     position: relative;
-    top: 82%;
+    width: 62%;
+    top: 80%;
     margin-left: auto; 
     margin-right: auto;
     display: flex; /* Use flexbox layout */
@@ -262,10 +252,11 @@ transform: scale(1.3);
 }
 
 #timeline{
-    margin-top: 5.5%;
+    width: 90%;
+    margin-top: -5%;
     margin-bottom: 2%;
-    left: auto;
-    right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #project-title{
@@ -274,7 +265,7 @@ transform: scale(1.3);
 
 /* ArtWalks */
 #artwalks{
-    width: 95vw;
+    width: 95%;
     height: fit-content;
     background-image: url('/assets/images/Artwalks_box.png');
     background-repeat: no-repeat;
@@ -335,12 +326,13 @@ transform: scale(1.3);
 /* AvatarForge */
 
 #avatarforge{
-    width: 90vw;
+    width: 90%;
     height: fit-content;
     margin-top: -6%;
     background-image: url('/assets/images/Avatarforge_box.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 90% 100%;
+    background-position: right;
 }
 
 #avatarforge *{
@@ -383,13 +375,13 @@ transform: scale(1.3);
     position: absolute;
     width: 40%;
     left: auto;
-    right: 50%;
-    top: 28.5%;
+    right: 46%;
+    top: 30.5%;
 }
 
 #avatarforge #video-stack *{
     position: relative;
-    width: 80%;
+    width: 72%;
     height: 27%;
     border-radius: 25px !important;
     object-fit: cover !important;
@@ -400,7 +392,7 @@ transform: scale(1.3);
 /* RealDibs */
 
 #realdibs{
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     background-image: url('/assets/images/Realdibs_box.png');
     background-repeat: no-repeat;
@@ -449,7 +441,7 @@ transform: scale(1.3);
 /* Natural Voices */
 
 #naturalvoices{
-    width: 90vw;
+    width: 90%;
     height: fit-content;
     margin-top: 3%;
     background-image: url('/assets/images/Naturalvoices_box.png');
@@ -515,7 +507,7 @@ transform: scale(1.3);
 /* The Ai Quest */
 
 #theaiquest{
-    width: 100vw;
+    width: 100%;
     height: fit-content !important;
     margin-top: 10%;
     background-image: url('/assets/images/Theaiquest_box.png');
