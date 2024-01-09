@@ -328,10 +328,10 @@ transform: scale(1.3);
 #avatarforge{
     width: 90%;
     height: fit-content;
-    margin-top: -6%;
+    margin-top: -7.5%;
     background-image: url('/assets/images/Avatarforge_box.png');
     background-repeat: no-repeat;
-    background-size: 90% 100%;
+    background-size: 110% 100%;
     background-position: right;
 }
 
@@ -362,7 +362,7 @@ transform: scale(1.3);
 #avatarforge .project-desc{
     margin-left: auto;
     height: auto;
-    width: 40%;
+    width: 50%;
 }
 
 
@@ -375,13 +375,13 @@ transform: scale(1.3);
     position: absolute;
     width: 40%;
     left: auto;
-    right: 46%;
-    top: 30.5%;
+    right: 55%;
+    top: 28%;
 }
 
 #avatarforge #video-stack *{
     position: relative;
-    width: 72%;
+    width: 75%;
     height: 27%;
     border-radius: 25px !important;
     object-fit: cover !important;
@@ -393,6 +393,7 @@ transform: scale(1.3);
 
 #realdibs{
     width: 100%;
+    margin-top: -3%;
     height: fit-content;
     background-image: url('/assets/images/Realdibs_box.png');
     background-repeat: no-repeat;
